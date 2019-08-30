@@ -1,10 +1,11 @@
-﻿using System;
+﻿using DAL.Model;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 
-namespace DAL.Model
+namespace DAL.ModelInitializer
 {
-    class HotelContextInitializer : DropCreateDatabaseAlways<HotelContext>
+    class HotelContextInitializer : DropCreateDatabaseIfModelChanges<HotelContext>
     {
         protected override void Seed(HotelContext context)
         {

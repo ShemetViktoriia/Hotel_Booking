@@ -1,4 +1,6 @@
-﻿using System.Data.Entity;
+﻿using DAL.ModelConfiguration;
+using DAL.ModelInitializer;
+using System.Data.Entity;
 
 namespace DAL.Model
 {
@@ -19,5 +21,17 @@ namespace DAL.Model
         public virtual DbSet<Room> Rooms { get; set; }
         public virtual DbSet<Guest> Guests { get; set; }
         public virtual DbSet<CheckIn> CheckIns { get; set; }
+
+        // Override the OnModelCreating method to add
+        // configuration settings
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new CountryConfiguration());
+            modelBuilder.Configurations.Add(new CityConfiguration());
+            modelBuilder.Configurations.Add(new HotelConfiguration());
+            modelBuilder.Configurations.Add(new RoomConfiguration());
+            modelBuilder.Configurations.Add(new GuestConfiguration());
+            modelBuilder.Configurations.Add(new CheckInConfiguration());
+        }
     }
 }

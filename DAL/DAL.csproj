@@ -48,13 +48,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelConfiguration\EntityConfigurations.cs" />
     <Compile Include="Model\CheckIn.cs" />
     <Compile Include="Model\City.cs" />
     <Compile Include="Model\Guest.cs" />
     <Compile Include="Model\Hotel.cs" />
     <Compile Include="Model\HotelContext.cs" />
     <Compile Include="Model\Country.cs" />
-    <Compile Include="Model\HotelContextInitializer.cs" />
+    <Compile Include="ModelInitializer\HotelContextInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Room.cs" />
   </ItemGroup>
