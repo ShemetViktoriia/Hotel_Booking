@@ -58,9 +58,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
+    <ProjectReference Include="..\HotelSystem.DAL\HotelSystem.DAL.csproj">
       <Project>{86cec83e-6821-48cc-9dc1-f3a4fc918270}</Project>
-      <Name>DAL</Name>
+      <Name>HotelSystem.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

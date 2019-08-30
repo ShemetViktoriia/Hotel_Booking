@@ -7,8 +7,8 @@
     <ProjectGuid>{86CEC83E-6821-48CC-9DC1-F3A4FC918270}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DAL</RootNamespace>
-    <AssemblyName>DAL</AssemblyName>
+    <RootNamespace>HotelSystem.DAL</RootNamespace>
+    <AssemblyName>HotelSystem.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
