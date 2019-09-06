@@ -48,6 +48,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\AuditableEntity.cs" />
+    <Compile Include="Common\Entity.cs" />
+    <Compile Include="Common\IAuditableEntity.cs" />
+    <Compile Include="Common\IEntity.cs" />
+    <Compile Include="Extensions\CheckIn.cs" />
+    <Compile Include="Extensions\City.cs" />
+    <Compile Include="Extensions\Country.cs" />
+    <Compile Include="Extensions\Guest.cs" />
+    <Compile Include="Extensions\Hotel.cs" />
+    <Compile Include="Extensions\Room.cs" />
     <Compile Include="ModelConfiguration\EntityConfigurations.cs" />
     <Compile Include="Model\CheckIn.cs" />
     <Compile Include="Model\City.cs" />
@@ -63,5 +73,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

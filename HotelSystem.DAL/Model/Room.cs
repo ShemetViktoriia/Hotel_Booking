@@ -6,9 +6,8 @@ namespace DAL.Model
     /// <summary>
     /// Keeps rooms in hotels
     /// </summary>
-    public class Room
+    public partial class Room
     {
-        public int Id { get; set; }
         public int RoomNumber { get; set; }
         public Hotel Hotel { get; set; }
         [Range(1, 5, ErrorMessage = "Number of rooms must be beetwen 1 and 5")]

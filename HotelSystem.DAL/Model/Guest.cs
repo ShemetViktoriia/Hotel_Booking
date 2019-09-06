@@ -6,9 +6,8 @@ namespace DAL.Model
     /// <summary>
     /// Keeps all guests registered in hotel system
     /// </summary>
-    public class Guest
+    public partial class Guest
     {
-        public int Id { get; set; }
         public string Passport { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

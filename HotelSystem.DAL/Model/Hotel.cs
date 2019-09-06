@@ -6,9 +6,8 @@ namespace DAL.Model
     /// <summary>
     /// Keeps hotels in the chain
     /// </summary>
-    public class Hotel
+    public partial class Hotel
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public City City { get; set; }
         [Range (1, 5, ErrorMessage = "Star rating must be beetwen 1 and 5")]

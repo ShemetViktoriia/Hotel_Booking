@@ -6,9 +6,8 @@ namespace DAL.Model
     /// <summary>
     /// Keeps all checkIns in hotel system
     /// </summary>
-    public class CheckIn
+    public partial class CheckIn
     {
-        public int Id { get; set; }
         public Room Room { get; set; }
         public DateTime DateArrival { get; set; }
         public DateTime DateDepartureExpected { get; set; }

@@ -1,5 +1,4 @@
-﻿using DAL.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -9,10 +8,10 @@ namespace HotelSystem.Repository.BaseRepository
 {
     public abstract class BaseRepository<TEntity>: IBaseRepository<TEntity> where TEntity:class
     {
-        protected readonly HotelContext _context;
+        protected readonly DbContext _context;
 
         // ctor
-        public BaseRepository(HotelContext context)
+        public BaseRepository(DbContext context)
         {
             _context = context;
         }
